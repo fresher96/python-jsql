@@ -52,7 +52,7 @@ def test_pk_map():
         3: {'id': 3, 'name': 'C'}
     }
 
-def test_pk_map_many():
+def test_pks_map():
     res = jsql.SqlProxy(example)
     assert res.pks_map('id', 'name') == {
         (1, 'A'): {'id': 1, 'name': 'A'},
